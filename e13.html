@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>The smallest number in array</h1>
+
+<p id="demo"></p>
+
+
+<script>
+var num=7;
+document.getElementById("demo").innerHTML=triangle(num);
+function triangle(num){
+
+for(var i=1; i <= num; i++)
+ {
+  for(var j=1; j<=i; j++)
+ {
+   
+   document.write('*');
+  }
+   document.write('<br />');
+  }
+  
+}
+</script>
+</body>
+</html>

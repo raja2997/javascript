@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>The smallest number in array</h1>
+
+<p id="demo"></p>
+
+
+<script>
+var str=5;
+
+document.getElementById("demo").innerHTML=addUp(str);
+function addUp(num) {
+  if (num <= 1) {
+    return num;
+  } else {
+    return num + addUp(num - 1);
+  }
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>The smallest number in array</h1>
+
+<p id="demo"></p>
+
+
+<script>
+var str="raja";
+document.getElementById("demo").innerHTML=AlphabeticalOrder(str);
+function AlphabeticalOrder(str) {
+  return str
+    .split("")
+    .sort()
+    .join("");
+}
+</script>
+</body>
+</html>

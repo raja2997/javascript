@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>The smallest number in array</h1>
+
+<p id="demo"></p>
+
+
+<script>
+var str=1111;
+
+document.getElementById("demo").innerHTML=romanNumbers(str);
+function romanNumbers(num) {
+  var values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+  var romanNumerals = [
+    "M",
+    "CM",
+    "D",
+    "CD",
+    "C",
+    "XC",
+    "L",
+    "XL",
+    "X",
+    "IX",
+    "V",
+    "IV",
+    "I"
+  ];
+
+  let roman = "";
+
+  for (var i = 0; i < values.length; i++) {
+    while (values[i] <= num) {
+      roman += romanNumerals[i];
+      num -= values[i];
+    }
+  }
+  return roman;
+}
+</script>
+</body>
+</html>

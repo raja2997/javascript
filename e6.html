@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>The smallest number in array</h1>
+
+<p id="demo"></p>
+
+
+<script>
+var str=[1,2,3,'raja','mummy',4,5,6];
+
+document.getElementById("demo").innerHTML=numbersOnly(str);
+function numbersOnly(arr) {
+  return arr.filter(arr => typeof arr == "number");
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>The smallest number in array</h1>
+
+<p id="demo"></p>
+
+
+<script>
+var str=[100,28,13,4,26,99];
+
+document.getElementById("demo").innerHTML=sortArray(str);
+function sortArray(arr) {
+  return arr.sort(function(a,b) {return a-b });
+}
+</script>
+</body>
+</html>

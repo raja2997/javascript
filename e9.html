@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>The smallest number in array</h1>
+
+<p id="demo"></p>
+
+
+<script>
+var str=[1,2,3,4,56,99];
+
+document.getElementById("demo").innerHTML=minMaxLengthAverage(str);
+function minMaxLengthAverage(arr) {
+  var min = Math.min.apply(null,arr);
+  var max = Math.max.apply(null,arr);
+  var len = arr.length;
+ 
+ var sum=0;
+var avg=0;
+   for(var i=0;i<len;i++)
+{
+    sum=sum+arr[i];
+     avg=(sum/len);
+}
+  //Return output
+  return [min, max, len,avg];
+}
+</script>
+</body>
+</html>

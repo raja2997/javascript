@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>The smallest number in array</h1>
+
+<p id="demo"></p>
+
+
+<script>
+var arr=[20,30,1];
+document.getElementById("demo").innerHTML=findSmallest(arr);
+function findSmallest(arr) {
+  return Math.min.apply(null,arr);
+}
+</script>
+</body>
+</html>
